@@ -25,7 +25,7 @@ sql_query = "select count(*) from OR;"
 driver = webdriver.Chrome()
 
 # Step 1: Log in to the website
-driver.get("https://superset.iecho.org/")
+driver.get("https://superset.xxxx.org/")
 driver.find_element(By.NAME, "username").send_keys(userid)
 driver.find_element(By.NAME, "password").send_keys(password)
 driver.find_element(By.NAME, "password").send_keys(Keys.RETURN)
@@ -33,7 +33,7 @@ driver.find_element(By.NAME, "password").send_keys(Keys.RETURN)
 time.sleep(3)  # Wait for login to complete
 
 # Step 2: Navigate to the SQL page
-driver.get("https://superset.iecho.org/sqllab")
+driver.get("https://superset.xxxx.org/sqllab")
 time.sleep(3)  # Wait for page load
 
 # Step 3: Click on Ace Editor to Activate It (Instead of Clicking `ace_text-input`)
